@@ -1,4 +1,3 @@
-from gc import callbacks
 import pandas as pd
 import dash
 import plotly.express as px
@@ -11,7 +10,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
-data = GatherData("data/nyc_housing_data.csv")
+data = GatherData("./data/nyc_housing_data_SAMPLE.csv")
 data.load_data()
 data.preprocess_data()
 df = data.remove_price_outliers(10000)

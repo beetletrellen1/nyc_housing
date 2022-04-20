@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 # data
-data/nyc_housing_data.csv
+data/nyc_housing.csv
+data/nyc_housing_PREDS.csv
